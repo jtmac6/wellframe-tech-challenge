@@ -31,7 +31,11 @@ Prescription maps patients to available medications.
     ```
     
 # Startup
- 1. Start the server
+ 1. Initialize the database
+```
+python manage.py migrate
+```
+2.Start the server
  ```bash
 python manage.py runserver
 ```

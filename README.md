@@ -50,17 +50,17 @@ http://localhost:8000/api/v1
 
 1. Adding a new medication
 ```
-curl -i -X POST -H "Content-Type:application/json" http://localhost/api/v1/medication -d '{"name":"Advil"}'
+curl -i -X POST -H "Content-Type:application/json" http://localhost:8000/api/v1/medication -d '{"name":"Advil"}'
 ```
 2. Adding a new patients
 ```
-curl -i -X POST -H "Content-Type:application/json" http://localhost/api/v1/patients -d '{"name":"Bob"}'
+curl -i -X POST -H "Content-Type:application/json" http://localhost:8000/api/v1/patients -d '{"name":"Bob"}'
 ```
 3. Assign a prescription to a patient
 ```
-curl -i -X POST -H "Content-Type:application/json" http://localhost/api/v1/patients/{patient_id}/prescriptions -d '{"patient":"PATIENT_ID", "medication":"MEDICATION_ID"}'
+curl -i -X POST -H "Content-Type:application/json" http://localhost:8000/api/v1/patients/{patient_id}/prescriptions -d '{"patient":"PATIENT_ID", "medication":"MEDICATION_ID"}'
 ```
 4. Remove a prescription assigned to a patient
 ```
-curl -i -X DELETE -H "Content-Type:application/json" http://localhost/api/v1/patients/{patient_id}/prescriptions/{prescription_id}
+curl -i -X DELETE -H "Content-Type:application/json" http://localhost:8000/api/v1/patients/{patient_id}/prescriptions/{prescription_id}
 ```

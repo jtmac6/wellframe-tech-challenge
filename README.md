@@ -32,13 +32,13 @@ Prescription maps patients to available medications.
     
 # Startup
  1. Initialize the database
-```
-python manage.py migrate
-```
-2.Start the server
- ```bash
-python manage.py runserver
-```
+ ```
+ python manage.py migrate
+ ```
+ 2. Start the server
+ ```
+ python manage.py runserver
+ ```
 
 # Documentation
  http://localhost:8000/docs/

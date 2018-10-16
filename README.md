@@ -4,12 +4,19 @@ A simple medication management API
 # Design
 I created this API using Python, Django, and the Django REST Framework.
 There are three models used in this API: Patient, Medication, and Prescription.
-Patient contains information about a patient such as their name and age. Medication
-contains information about an available medication such as the name of the medication.
 Prescription maps patients to available medications.
 
-# Installation:
+```
+/patients                         
+/patients/{patient_id}/                 
+/patients/{patient_id}/prescriptions    
+/medications                            
+/medications/{medication_id}/
+/prescriptions/
+/prescriptions/{prescription_id}/
+```
 
+# Installation:
 1. Create a virtual environment.
   
     ```
@@ -47,7 +54,6 @@ Prescription maps patients to available medications.
 http://localhost:8000/api/v1 
 
 # Example Usage:
-
 1. Adding a new medication
 ```
 curl -i -X POST -H "Content-Type:application/json" http://localhost:8000/api/v1/medications/ -d '{"name":"Advil"}'
@@ -58,9 +64,9 @@ curl -i -X POST -H "Content-Type:application/json" http://localhost:8000/api/v1/
 ```
 3. Assign a prescription to a patient
 ```
-curl -i -X POST -H "Content-Type:application/json" http://localhost:8000/api/v1/patients/{patient_id}/prescriptions/ -d '{"patient":"PATIENT_ID", "medication":"MEDICATION_ID"}'
+curl -i -X POST -H "Content-Type:application/json" http://localhost:8000/api/v1/patients/1/prescriptions/ -d '{"patient":"1", "medication":"1"}'
 ```
 4. Remove a prescription assigned to a patient
 ```
-curl -i -X DELETE -H "Content-Type:application/json" http://localhost:8000/api/v1/patients/{patient_id}/prescriptions/{prescription_id}/
+curl -i -X DELETE -H "Content-Type:application/json" http://localhost:8000/api/v1/patients/1/prescriptions/1/
 ```

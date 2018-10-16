@@ -62,5 +62,5 @@ curl -i -X POST -H "Content-Type:application/json" http://localhost:8000/api/v1/
 ```
 4. Remove a prescription assigned to a patient
 ```
-curl -i -X DELETE -H "Content-Type:application/json" http://localhost:8000/api/v1/patients/{patient_id}/prescriptions/{prescription_id}
+curl -i -X DELETE -H "Content-Type:application/json" http://localhost:8000/api/v1/patients/{patient_id}/prescriptions/{prescription_id}/
 ```

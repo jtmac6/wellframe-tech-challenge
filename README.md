@@ -7,10 +7,10 @@ There are three models used in this API: Patient, Medication, and Prescription.
 Prescription maps patients to available medications.
 
 ```
-/patients                         
+/patients/                         
 /patients/{patient_id}/                 
 /patients/{patient_id}/prescriptions    
-/medications                            
+/medications/                            
 /medications/{medication_id}/
 /prescriptions/
 /prescriptions/{prescription_id}/

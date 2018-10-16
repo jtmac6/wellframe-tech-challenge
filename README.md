@@ -50,7 +50,7 @@ http://localhost:8000/api/v1
 
 1. Adding a new medication
 ```
-curl -i -X POST -H "Content-Type:application/json" http://localhost:8000/api/v1/medication -d '{"name":"Advil"}'
+curl -i -X POST -H "Content-Type:application/json" http://localhost:8000/api/v1/medications -d '{"name":"Advil"}'
 ```
 2. Adding a new patients
 ```
